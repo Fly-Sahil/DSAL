@@ -115,3 +115,67 @@ int main()
 	}while(ch!=4);
 	return 0;
 }
+/*==========PRIM'S ALGORITHM=================
+
+1.INPUT
+
+2.DISPLAY
+
+3.MINIMUM
+
+Enter your choice :
+1
+*******INPUT YOUR VALUES*******
+Enter the no. of branches: 4
+
+Enter the no. of connections: 5
+Enter the end branches of connections:
+1 2
+Enter the phone company charges for this connection:  5
+Enter the end branches of connections:
+2 3
+Enter the phone company charges for this connection:  3
+Enter the end branches of connections:
+3 4
+Enter the phone company charges for this connection:  6
+Enter the end branches of connections:
+4 1
+Enter the phone company charges for this connection:  2
+Enter the end branches of connections:
+2 4
+Enter the phone company charges for this connection:  4
+==========PRIM'S ALGORITHM=================
+
+1.INPUT
+
+2.DISPLAY
+
+3.MINIMUM
+
+Enter your choice :
+2
+*******DISPLAY THE CONTENTS********
+
+Adjacency matrix:
+999   5   999   2
+
+5   999   3   4
+
+999   3   999   6
+
+2   4   6   999
+==========PRIM'S ALGORITHM=================
+
+1.INPUT
+
+2.DISPLAY
+
+3.MINIMUM
+
+Enter your choice :
+3
+*********MINIMUM************
+Minimum cost connection is1 -> 4  with charge : 2
+Minimum cost connection is4 -> 2  with charge : 4
+Minimum cost connection is2 -> 3  with charge : 3
+The minimum total cost of connections of all branches is: 9*/
