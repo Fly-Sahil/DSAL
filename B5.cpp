@@ -120,4 +120,101 @@ int main()
                 a=1;
         }
     }
-}    
+}  
+
+"""Welcome to Tree
+1.Create
+2.Display
+3.Exit
+1
+
+Enter Name of the Book:
+ToughTimes
+
+Enter number of Chapters in Book: ToughTimes
+2
+
+Enter Name of Chapter 1 in Book ToughTimes
+Beginning
+
+Enter Number of Sections in Chapter: Beginning
+2
+
+Enter Name of Section 1in Chapter: Beginning
+firsthalf
+
+Enter Number of Subsection in Section: firsthalf
+2
+
+Enter Name of Subsection 1 in Section: firsthalf
+subsec1
+
+Enter Name of Subsection 2 in Section: firsthalf
+subsec2
+
+Enter Name of Section 2in Chapter: Beginning
+secondhalf
+
+Enter Number of Subsection in Section: secondhalf
+2
+
+Enter Name of Subsection 1 in Section: secondhalf
+subsec1
+
+Enter Name of Subsection 2 in Section: secondhalf
+subsec2
+
+Enter Name of Chapter 2 in Book ToughTimes
+Ending
+
+Enter Number of Sections in Chapter: Ending
+2
+
+Enter Name of Section 1in Chapter: Ending
+Itsstarted
+
+Enter Number of Subsection in Section: Itsstarted
+2
+
+Enter Name of Subsection 1 in Section: Itsstarted
+subsec1
+
+Enter Name of Subsection 2 in Section: Itsstarted
+subsec2
+
+Enter Name of Section 2in Chapter: Ending
+itsending
+
+Enter Number of Subsection in Section: itsending
+2
+
+Enter Name of Subsection 1 in Section: itsending
+subsec1
+
+Enter Name of Subsection 2 in Section: itsending
+subsec2
+Welcome to Tree
+1.Create
+2.Display
+3.Exit
+2
+---------------
+Book Tree
+---------------
+Book Title: ToughTimes
+
+Chapter 1: Beginning
+        Section 1: firsthalf
+                Subsection 1: subsec1
+                Subsection 2: subsec2
+        Section 2: secondhalf
+                Subsection 1: subsec1
+                Subsection 2: subsec2
+
+Chapter 2: Ending
+        Section 1: Itsstarted
+                Subsection 1: subsec1
+                Subsection 2: subsec2
+        Section 2: itsending
+                Subsection 1: subsec1
+                Subsection 2: subsec2 """
