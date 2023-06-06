@@ -122,7 +122,8 @@ int main()
     }
 }  
 
-"""Welcome to Tree
+/*
+Welcome to Tree
 1.Create
 2.Display
 3.Exit
@@ -217,4 +218,4 @@ Chapter 2: Ending
                 Subsection 2: subsec2
         Section 2: itsending
                 Subsection 1: subsec1
-                Subsection 2: subsec2 """
+                Subsection 2: subsec2 */
