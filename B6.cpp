@@ -256,3 +256,128 @@ int main()
    
     return 0;
 }
+/*
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 10
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 23
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 2
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 15
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 27
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit1
+
+ Enter the data: 35
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit2
+
+ smallest no.2
+ largest no.35
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit3
+
+ Enter data to be searched: 2
+
+ data found
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit4
+
+ Height of the tree is: 4
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit5
+
+ Enter data to be deleted: 35
+
+ Enter your choice !!
+ 1.Insert
+ 2.Find
+ 3.Search
+ 4.Height
+ 5.Delete
+ 6.Display
+ 7.Exit6
+
+*10
+*2
+*23
+*15
+*27*/
