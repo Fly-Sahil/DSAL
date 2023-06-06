@@ -81,3 +81,22 @@ int main()
     }
     return 0;
 }
+
+/*Enter number of vertices : 4
+Enter number of edges : 4
+
+EDGES :
+1 2
+2 3
+3 4
+4 1
+ 0 1 0 1
+ 1 0 1 0
+ 0 1 0 1
+ 1 0 1 0
+Enter initial vertex : 1
+The BFS of the Graph is:
+1 2 4 3
+Enter initial vertex : 1
+The DFS of the Graph is :
+2 1 3 4*/
