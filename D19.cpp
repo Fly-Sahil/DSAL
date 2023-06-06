@@ -253,3 +253,94 @@ int main()
     while(c=='y'||c=='Y');
     return 0;
 }
+/*
+    **********************************
+ 1.Insert a keyword in AVL tree.
+ 2.Display the AVL tree.
+ 3.Search a keyword
+ 4.Delete a keyword.
+ Enter your choice : 1
+
+ Enter the keyword: apple
+
+ Enter the meaning: fruit
+
+ Do you want to add another word? (y/n) y
+
+ Enter the keyword: banana
+
+ Enter the meaning: fruit
+
+ Do you want to add another word? (y/n) y
+
+ Enter the keyword: cat
+
+ Enter the meaning: animal
+
+ Do you want to add another word? (y/n) y
+
+ Enter the keyword: sunflower
+
+ Enter the meaning: flowers
+
+ Do you want to add another word? (y/n) n
+
+ Do you want to continue? (y/n): y
+*********************************
+ 1.Insert a keyword in AVL tree.
+ 2.Display the AVL tree.
+ 3.Search a keyword
+ 4.Delete a keyword.
+ Enter your choice : 2
+
+ The keywords in ascending order are:
+
+        apple : fruit
+        banana : fruit
+        cat : animal
+        sunflower : flowers
+ The keywords in descending order are:
+
+        sunflower : flowers
+        cat : animal
+        banana : fruit
+        apple : fruit
+ Do you want to continue? (y/n): y
+*********************************
+ 1.Insert a keyword in AVL tree.
+ 2.Display the AVL tree.
+ 3.Search a keyword
+ 4.Delete a keyword.
+ Enter your choice : 3
+
+ Enter the keyword you wish to search: apple
+
+ The entered keyword is present in the AVL tree
+ Do you want to continue? (y/n): y
+*********************************
+ 1.Insert a keyword in AVL tree.
+ 2.Display the AVL tree.
+ 3.Search a keyword
+ 4.Delete a keyword.
+ Enter your choice : 4
+
+ Enter the keyword to be deleted: banana
+
+ Do you want to continue? (y/n): y
+*********************************
+ 1.Insert a keyword in AVL tree.
+ 2.Display the AVL tree.
+ 3.Search a keyword
+ 4.Delete a keyword.
+ Enter your choice : 2
+
+ The keywords in ascending order are:
+
+        apple : fruit
+        cat : animal
+        sunflower : flowers
+ The keywords in descending order are:
+
+        sunflower : flowers
+        cat : animal
+        apple : fruit*/
