@@ -364,4 +364,243 @@ void dict::input_update()
     				}
     				  }while(ch!=6);
     				return 0;
-				}	
+				}
+/*==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+1
+
+Enter the keyword:
+sahil
+Enter the meaning of the keyword:
+name
+
+Root node created successfully
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+1
+
+Enter the keyword:
+umar
+Enter the meaning of the keyword:
+friend
+Node added to right of sahil
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+1
+
+Enter the keyword:
+Ali
+Enter the meaning of the keyword:
+friend
+Node added to left of sahil
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+1
+
+Enter the keyword:
+CompScience
+Enter the meaning of the keyword:
+course
+Node added to right of Ali
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+1
+
+Enter the keyword:
+Entc
+Enter the meaning of the keyword:
+course
+Node added to right of CompScience
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+2
+The words entered in the dictionary are:
+
+Ali = friend
+
+CompScience = course
+
+Entc = course
+
+sahil = name
+
+umar = friend
+
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+3
+
+Enter a keyword to be deleted:
+Entc
+
+The word 'Entc' has been deleted.
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+2
+The words entered in the dictionary are:
+
+Ali = friend
+
+CompScience = course
+
+sahil = name
+
+umar = friend
+
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+4
+
+Enter the keyword to be searched:
+sahil
+
+Word found.
+sahil: name
+Number of comparisons needed: 1
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+5
+
+Enter the keyword to be updated:
+umar
+
+Word found.
+umar: friend
+
+Enter the updated meaning of the keyword:
+bestfriend
+
+The meaning of 'umar' has been updated.
+
+==========================================
+
+********DICTIONARY***********:
+
+Enter your choice:
+1.Add new keyword.
+2.Display the contents of the Dictionary.
+3.Delete a keyword.
+4.Find a keyword.
+5.Update the meaning of a keyword.
+6.Exit.
+===============================================
+2
+The words entered in the dictionary are:
+
+Ali = friend
+
+CompScience = course
+
+sahil = name
+
+umar = bestfriend
+*/
