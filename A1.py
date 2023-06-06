@@ -121,3 +121,40 @@ def main():
 			flag = 1
 
 main()
+""" Enter number of  persons:4
+Enter element (1):8208633699
+Enter name (1):sahil
+Enter element (2):9011804423
+Enter name (2):mom
+Enter element (3):9372860619
+Enter name (3):dad
+Enter element (4):7028875552
+Enter name (4):rixx
+Enter 1 for Linear or 2 for Double Hashing or 3 for exit: 1
+Enter size of Hash Table:10
+
+Key - Value
+0 - 9372860619 : dad
+1 - 0 : 0
+2 - 7028875552 : rixx
+3 - 9011804423 : mom
+4 - 0 : 0
+5 - 0 : 0
+6 - 0 : 0
+7 - 0 : 0
+8 - 0 : 0
+9 - 8208633699 : sahil
+Enter 1 for Linear or 2 for Double Hashing or 3 for exit: 2
+Enter size of Hash Table:10
+
+Key - Value
+0 - 0 : 0
+1 - 0 : 0
+2 - 7028875552 : rixx
+3 - 9011804423 : mom
+4 - 0 : 0
+5 - 0 : 0
+6 - 0 : 0
+7 - 9372860619 : dad
+8 - 0 : 0
+9 - 8208633699 : sahil"""
