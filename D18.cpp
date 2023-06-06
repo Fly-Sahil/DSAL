@@ -125,3 +125,41 @@ obj.build_OBST();
 obj.build_tree();
 return 0;
 }
+
+/*
+ Optimal Binary Search Tree
+
+ Enter the number of nodes:3
+
+ Enter the data as:
+
+ a[1]5
+
+ a[2]2
+
+ a[3]8
+
+ p[1]1
+
+ p[2]1
+
+ p[3]1
+
+ q[0]0
+
+ q[1]0
+
+ q[2]0
+
+ q[3]0
+The Optimal Binary Search Tree For the Given Node Is:
+
+The Root of this OBST is ::2
+The Cost of this OBST is::5
+
+         NODE    LEFT CHILD      RIGHT CHILD
+
+        2               1       3
+        1
+        3
+*/
