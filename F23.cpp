@@ -130,3 +130,101 @@ int main()
 	  }while(ans=='y'||ans=='Y');
 return 1;
   }
+
+/*
+        ***** Student Information *****
+        1. Create
+        2. Display
+        3. Delete
+        4. Search
+        5. Exit
+        ..... Enter Your Choice: 1
+
+Enter Roll No of Student    : 77
+
+Enter a Name of Student     : Sahil
+
+Enter a Division of Student : A
+
+Enter a Address of Student  : shreeramSociety
+
+Do You Want to Add More Records: y
+
+Enter Roll No of Student    : 55
+
+Enter a Name of Student     : Rohan
+
+Enter a Division of Student : B
+
+Enter a Address of Student  : WarjeColony
+
+Do You Want to Add More Records: y
+
+Enter Roll No of Student    : 23
+
+Enter a Name of Student     : Akshay
+
+Enter a Division of Student : B
+
+Enter a Address of Student  : Golbuilding
+
+Do You Want to Add More Records: y
+
+Enter Roll No of Student    : 66
+
+Enter a Name of Student     : Vinay
+
+Enter a Division of Student : C
+
+Enter a Address of Student  : paladiumhomes
+
+Do You Want to Add More Records: n
+
+..... Do You Want to Continue in Main Menu: y
+
+        ***** Student Information *****
+        1. Create
+        2. Display
+        3. Delete
+        4. Search
+        5. Exit
+        ..... Enter Your Choice: 2
+
+The Content of File are:
+
+        Roll    Name    Div     Address
+        77      Sahil   A       shreeramSocie
+        55      Rohan   B       WarjeColony
+        23      Akshay  B       Golbuilding
+        66      Vinay   C       paladiumhomes
+..... Do You Want to Continue in Main Menu: y
+
+        ***** Student Information *****
+        1. Create
+        2. Display
+        3. Delete
+        4. Search
+        5. Exit
+        ..... Enter Your Choice: 3
+
+Enter a Roll No: 66
+
+Record Found...
+        Roll    Name    Div     Address
+        66      Vinay   C       paladiumhomes
+Record Deleted
+..... Do You Want to Continue in Main Menu: y
+
+        ***** Student Information *****
+        1. Create
+        2. Display
+        3. Delete
+        4. Search
+        5. Exit
+        ..... Enter Your Choice: 4
+
+Enter a Roll No: 55
+
+Record Found...
+        Roll    Name    Div     Address
+        55      Rohan   B       WarjeColony*/
