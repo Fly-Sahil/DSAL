@@ -129,3 +129,83 @@ int main() {
     } while (choice != 4);
     return 0;
 }
+/*1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 1
+Enter Employee ID: 101
+Enter Employee Name: sahil
+Enter Employee Designation: manager
+Enter Employee Salary: 8000
+
+1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 1
+Enter Employee ID: 102
+Enter Employee Name: omkar
+Enter Employee Designation: engineer
+Enter Employee Salary: 45000
+
+1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 1
+Enter Employee ID: 103
+Enter Employee Name: vinayak
+Enter Employee Designation: officer
+Enter Employee Salary: 6000
+
+1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 3
+Enter Employee ID to display: 102
+Employee ID: 102
+Name: omkar
+Designation: engineer
+Salary: 45000
+
+1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 2
+Enter Employee ID to delete: 101
+Employee with ID 101 deleted successfully.
+
+1. Add Employee
+
+2. Delete Employee
+
+3. Display Employee
+
+4. Exit
+
+Enter your choice: 3
+Enter Employee ID to display: 101
+Employee with ID 101 not found.*/
