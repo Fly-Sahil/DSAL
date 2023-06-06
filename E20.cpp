@@ -142,4 +142,41 @@ int main() {
         return 0;
 }
 
+/*C:\Users\SAHIL\Documents\DSAL>a
+Enter Your Choice:-
+1 for Insert the Data in Queue
+2 for show the Data in Queue
+3 for Delete the data from the Queue
+0 for Exit
+1
+Enter the number of patinent
+3
+Enter your name of the patient : sahil
+Enter your Prioritys (0: serious, 1: non-serious, 2: genral checkup) : 2
+Enter your name of the patient : omkar
+Enter your Prioritys (0: serious, 1: non-serious, 2: genral checkup) : 1
+Enter your name of the patient : vinayak
+Enter your Prioritys (0: serious, 1: non-serious, 2: genral checkup) : 0
+1 for Insert the Data in Queue
+2 for show the Data in Queue
+3 for Delete the data from the Queue
+0 for Exit
+2
+Patient's Name - vinayak Priority - 'Serious'
+Patient's Name - omkar Priority - 'Non-serious'
+Patient's Name - sahil Priority - 'Checkup'
+1 for Insert the Data in Queue
+2 for show the Data in Queue
+3 for Delete the data from the Queue
+0 for Exit
+3
+deleted Element =vinayak
+Its Priority = 10
+1 for Insert the Data in Queue
+2 for show the Data in Queue
+3 for Delete the data from the Queue
+0 for Exit
+2
+Patient's Name - omkar Priority - 'Non-serious'
+Patient's Name - sahil Priority - 'Checkup'*/
 
