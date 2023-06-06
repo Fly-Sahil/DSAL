@@ -78,6 +78,134 @@ while(a==True):
         a=False
         print("Thank you!!")
         break
-    
+        
+ """Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+1
+Enter set in which you want to add element:
+ 1.SET 1
+ 2.SET 2
+1
+Enter number of element you want to add in set:
+3
+Enter the element: a
+{'a'}
+Enter the element: b
+{'b', 'a'}
+Enter the element: c
+{'b', 'a', 'c'}
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+1
+Enter set in which you want to add element:
+ 1.SET 1
+ 2.SET 2
+2
+Enter number of element you want to add in set:
+3
+Enter the element: b
+{'b'}
+Enter the element: c
+{'b', 'c'}
+Enter the element: d
+{'b', 'd', 'c'}
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+2
+Enter set from which you want to delete element:
+ 1.SET 1
+ 2.SET 2
+ 2
+{'b', 'd', 'c'}
+Enter the element to reomove: d
+{'b', 'c'}
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+3
+Enter set from which you want to display the size of:
+ 1.SET 1
+ 2.SET 2
+ 1
+Size of Sef is:  3
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+5
+Union of Sets are:  {'a', 'c', 'b'}
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+6
+Enter Difference you want to perform:
+ 1.SET 1 - SET 2
+ 2.SET 2 - SET 1
+ 1
+Difference of Set are:  {'a'}
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+6
+Enter Difference you want to perform:
+ 1.SET 1 - SET 2
+ 2.SET 2 - SET 1
+ 2
+Difference of Set are:  set()
+Enter Operation you want to carry on set:
+ 1.Add Element
+ 2.Delete Element
+ 3.Display Size of Set
+ 4.Intersection
+ 5.Union
+ 6.Difference
+ 7.Sub-Set Checker
+ 8.End
+7
+SET 2 is subset of SET 1 """
     
 
