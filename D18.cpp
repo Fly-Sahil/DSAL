@@ -1,129 +1,152 @@
-#include<iostream>
+#include <iomanip>
+#include <iostream>
+
 using namespace std;
-#define SIZE 10
-class OBST
-{
-int p[SIZE]; 
-int q[SIZE];
-int a[SIZE];
-int w[SIZE][SIZE];
-int c[SIZE][SIZE];
-int r[SIZE][SIZE];
-int n; 
-public:
 
-void get_data()
-{
-int i;
-cout<<"\n Optimal Binary Search Tree \n";
-cout<<"\n Enter the number of nodes:";
-cin>>n;
-cout<<"\n Enter the data as:\n";
-for(i=1;i<=n;i++)
-{
-cout<<"\n a["<<i<<"]";
-cin>>a[i];
-}
-for(i=1;i<=n;i++)
-{
-cout<<"\n p["<<i<<"]";
-cin>>p[i];
-}
-for(i=0;i<=n;i++)
-{
-cout<<"\n q["<<i<<"]";
-cin>>q[i];
-}
-}
+#define MAX_NODES 10
 
-int Min_Value(int i,int j)
-{
-int m,k;
-int minimum=32000;
-for(m=r[i][j-1];m<=r[i+1][j];m++)
-{
-if((c[i][m-1]+c[m][j])<minimum)
-{
- minimum=c[i][m-1]+c[m][j];
- k=m;
-}
-}
-return k;
-}
-
-void build_OBST()
-{
- int i,j,k,l,m;
- for(i=0;i<n;i++)
- {
-
-w[i][i]=q[i];
-r[i][i]=c[i][i]=0;
-
-w[i][i+1]=q[i]+q[i+1]+p[i+1];
-r[i][i+1]=i+1;
-c[i][i+1]=q[i]+q[i+1]+p[i+1];
- }
- w[n][n]=q[n];
- r[n][n]=c[n][n]=0;
-
- for(m=2;m<=n;m++)
- {
-for(i=0;i<=n-m;i++)
-{
- j=i+m;
- w[i][j]=w[i][j-1]+p[j]+q[j];
- k=Min_Value(i,j);
- c[i][j]=w[i][j]+c[i][k-1]+c[k][j];
- r[i][j]=k;
-}
- }
-}
-
-void build_tree()
-{
- int i,j,k;
- int queue[20],front=-1,rear=-1;
- cout<<"The Optimal Binary Search Tree For the Given Node Is:\n";
- cout<<"\nThe Root of this OBST is ::"<<r[0][n];
- cout<<"\nThe Cost of this OBST is::"<<c[0][n];
- cout<<"\n\n\t NODE \t LEFT CHILD \t RIGHT CHILD ";
- cout<<"\n";
- queue[++rear]=0;
- queue[++rear]=n;
- while(front!=rear)
- {
-i=queue[++front];
-j=queue[++front];
- k=r[i][j];
- cout<<"\n\t"<<k;
-if(r[i][k-1]!=0)
-{
-cout<<"\t\t"<<r[i][k-1];
-queue[++rear]=i;
-queue[++rear]=k-1;
-}
-else
-cout<<"\t\t";
-if(r[k][j]!=0)
-{
-cout<<"\t"<<r[k][j];
-queue[++rear]=k;
-queue[++rear]=j;
-}
-else
-cout<<"\t";
- }
- cout<<"\n";
-}
+class node {
+   public:
+    int data;
+    node* left;
+    node* right;
+    node(int data = 0) {
+        this->data = data;
+        left = NULL;
+        right = NULL;
+    }
 };
-int main()
-{
-OBST obj;
-obj.get_data();
-obj.build_OBST();
-obj.build_tree();
-return 0;
+
+class OBST {
+   public:
+    int keys[MAX_NODES] = {0};          // for storing keys
+    int p[MAX_NODES] = {0};             // for storing frequencies
+    int q[MAX_NODES] = {0};             // for storing frequencies
+    int n;                              // count of nodes
+    int c[MAX_NODES][MAX_NODES] = {0};  // cost matrix
+    int w[MAX_NODES][MAX_NODES] = {0};  // cost matrix
+    int r[MAX_NODES][MAX_NODES] = {0};  // cost matrix
+    node* root;
+    // initialize the values
+    OBST(int count, int keys_arr[], int p_arr[], int q_arr[]) {
+        root = NULL;
+        n = count;
+        for (int i = 0; i <= n; i++) {
+            this->keys[i] = keys_arr[i];
+            this->p[i] = p_arr[i];
+            this->q[i] = q_arr[i];
+        }
+    }
+
+    // display matrix
+    void display_matrix(int mat[MAX_NODES][MAX_NODES]) {
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= n; j++) {
+                if (i <= j) {
+                    cout << setw(2) << mat[i][j] << " ";
+                } else {
+                    cout << "   ";
+                }
+            }
+            cout << endl;
+        }
+    }
+
+    int get_w(int i, int j) {
+        if (i >= j) {
+            return q[i];
+        }
+        return w[i][j - 1] + p[j] + q[j];
+    }
+
+    // generate cost matrix
+    void generate_cost_table() {
+        // initialize diagonal
+        for (int i = 0; i <= n; i++) {
+            c[i][i] = 0;
+            r[i][i] = 0;
+            w[i][i] = q[i];
+        }
+
+        // for j-i = 0 to n
+        for (int diff = 1; diff <= n; diff++) {
+            int i, j;
+            i = 0;
+            j = i + diff;
+
+            // for each pair with j-i = diff
+            while (j <= n) {
+                int min_cost = INT32_MAX, min_root;
+                // getting minimum cost and root for c[i,j]
+                for (int k = i + 1; k <= j; k++) {
+                    int cost = c[i][k - 1] + c[k][j];
+                    if (cost < min_cost) {
+                        min_cost = cost;
+                        min_root = k;
+                    }
+                }
+
+                // updating the c matrix
+                w[i][j] = get_w(i, j);
+                c[i][j] = min_cost + w[i][j];
+                r[i][j] = min_root;
+
+                // cout<<i<<j<<endl;
+                // cout << "w=" << w[i][j] << endl;
+                // cout << "c=" << c[i][j] << endl;
+                // cout << "r=" << r[i][j] << endl;
+
+                i++;
+                j++;
+            }
+        }
+        cout << "Matrix C" << endl;
+        display_matrix(c);
+        cout << "Matrix W" << endl;
+        display_matrix(w);
+        cout << "Matrix R" << endl;
+        display_matrix(r);
+    }
+
+    // get node for [i,j]
+    node* get_node(int i, int j) {
+        if (i == j) {
+            return NULL;
+        }
+
+        int rij = r[i][j];
+        node* temp = new node(keys[rij]);
+        // left node will be [i,r-1]
+        temp->left = get_node(i, rij - 1);
+        // right node will be [r,j]
+        temp->right = get_node(rij, j);
+        return temp;
+    }
+
+    void pre_order(node* temp) {
+        if (temp != NULL) {
+            cout << temp->data << " ";
+            pre_order(temp->left);
+            pre_order(temp->right);
+        }
+    }
+
+    void generate_obst() {
+        root = get_node(0, n);
+        cout<<"PreOrder Traversal Is"<<endl;
+        pre_order(root);
+        cout << endl;
+    }
+};
+
+int main() {
+    int k[] = {0, 10, 20, 30, 40};
+    int p[] = {0, 3, 3, 1, 1};
+    int q[] = {2, 3, 1, 1, 1};
+    OBST o(4, k, p, q);
+    o.generate_cost_table();
+    o.generate_obst();
+    return 0;
 }
 
 /*
