@@ -150,39 +150,34 @@ int main() {
 }
 
 /*
- Optimal Binary Search Tree
 
- Enter the number of nodes:3
+enter a number of identifiers : 3
+enter identifiers : 4
+5
+6
+enter success probability for identifiers : 7
+8
+9
+enter failure probability  for identifiers : 7
+5
+4
+3
 
- Enter the data as:
+ Weight        Cost         Root
 
- a[1]5
+7         0         0
+5         0         0
+4         0         0
+3         0         0
+19         7         1
+17         5         2
+16         4         3
+23         28         1
+27         31         2
+26         37         2
+ THE FINAL OBST IS :
 
- a[2]2
-
- a[3]8
-
- p[1]1
-
- p[2]1
-
- p[3]1
-
- q[0]0
-
- q[1]0
-
- q[2]0
-
- q[3]0
-The Optimal Binary Search Tree For the Given Node Is:
-
-The Root of this OBST is ::2
-The Cost of this OBST is::5
-
-         NODE    LEFT CHILD      RIGHT CHILD
-
-        2               1       3
-        1
-        3
+5
+4
+6
 */
